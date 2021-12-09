@@ -1,6 +1,6 @@
 {
   "name": "@nanosrlorg/coolabds",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -8,7 +8,12 @@
     "dist",
     "README.md"
   ],
-  "keywords": ["tailwind", "storybook", "antdesign", "design system"],
+  "keywords": [
+    "tailwind",
+    "storybook",
+    "antdesign",
+    "design system"
+  ],
   "author": "nanosrlabs",
   "license": "ISC",
   "dependencies": {

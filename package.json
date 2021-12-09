@@ -8,6 +8,9 @@
     "dist",
     "README.md"
   ],
+  "keywords": ["tailwind", "storybook", "antdesign", "design system"],
+  "author": "nanosrlabs",
+  "license": "ISC",
   "dependencies": {
     "@babel/preset-react": "^7.16.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -27,7 +30,7 @@
     "sbk": "start-storybook -p 6006 -s public",
     "sbk-build": "build-storybook -s public",
     "pkg-build": "rm -rf dist && mkdir dist && babel src/stories tailwind.config.js -d dist --copy-files",
-    "pkg-update": "npm run pkg-build && npm version patch && npm publish"
+    "pkg-update": "npm run pkg-build && npm version patch && npm publish --access public"
   },
   "eslintConfig": {
     "extends": [

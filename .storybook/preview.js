@@ -1,3 +1,4 @@
+import 'antd/dist/antd.css'
 import '../src/stories/styles/global.css'
 
 export const parameters = {

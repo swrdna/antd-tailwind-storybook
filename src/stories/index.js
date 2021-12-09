@@ -1,3 +1,4 @@
+import 'antd/dist/antd.css'
 import './styles/global.css'
 
 import Alert from './components/Alert'

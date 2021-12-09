@@ -26,7 +26,7 @@
     "eject": "react-scripts eject",
     "sbk": "start-storybook -p 6006 -s public",
     "sbk-build": "build-storybook -s public",
-    "pkg-build": "rm -rf dist && mkdir dist && babel src/stories tailwind.config.js -d dist --copy-files",
+    "pkg-build": "rm -rf dist && mkdir dist && babel src/stories src/components tailwind.config.js -d dist --copy-files",
     "pkg-update": "npm run pkg-build && npm version patch && npm publish"
   },
   "eslintConfig": {

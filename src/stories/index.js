@@ -1,8 +1,17 @@
 import './styles/global.css'
 
-export { Alert } from './components/Alert'
-export { Button } from './components/Button'
-export { Card } from './components/Card'
-export { Checkbox } from './components/Checkbox'
-export { Input } from './components/Input'
-export { RadioButton } from './components/RadioButton'
+import Alert from './components/Alert'
+import Button from './components/Button'
+import Card from './components/Card'
+import Checkbox from './components/Checkbox'
+import Input from './components/Input'
+import RadioButton from './components/RadioButton'
+
+export {
+  Alert,
+  Button,
+  Card,
+  Checkbox,
+  Input,
+  RadioButton,
+}

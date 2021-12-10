@@ -1,22 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Alert as AntAlert } from 'antd'
 
-const Alert = ({ type, content }) => {
+const Alert = (props) => {
   return (
-    <div type={props.type}>
-      <p>{props.content}</p>
-    </div>
+    <AntAlert {...props} />
   )
 }
 
 Alert.propTypes = {
-  type: PropTypes.string,
-  content: PropTypes.string,
+  type: PropTypes.oneOf(['success', 'info', 'warning', 'error']),
+  message: PropTypes.string,
 }
 
 Alert.defaultProps = {
-  type: 'primary',
-  content: 'This is alert',
+  type: 'success',
+  message: 'This is alert',
 }
 
 export default Alert

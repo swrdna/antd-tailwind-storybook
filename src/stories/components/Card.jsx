@@ -1,26 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Card as AntCard } from 'antd'
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div className="bg-red-600">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nemo. Veniam tenetur impedit ullam vel exercitationem cumque esse ut commodi, officiis, at distinctio quam dignissimos dolore error dolorum consequuntur optio.</p>
-    </div>
+    <AntCard {...props}>
+      <div>{props.content}</div>
+    </AntCard>
   )
 }
 
 Card.propTypes = {
-  border: PropTypes.bool,
-  shadow: PropTypes.bool,
-  background: PropTypes.string,
-  color: PropTypes.string
+  title: PropTypes.string,
+  size: PropTypes.oneOf(['small', 'default']),
+  content: PropTypes.string,
 }
 
 Card.defaultProps = {
-  border: true,
-  shadow: false,
-  background: 'red',
-  color: 'white'
+  title: 'This is card',
+  size: 'default',
+  content: 'This is card content',
 }
 
 export default Card

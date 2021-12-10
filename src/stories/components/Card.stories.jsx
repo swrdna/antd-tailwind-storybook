@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './components/Card'
+import Card from './Card'
 
 export default {
   title: 'Component/Card',
@@ -10,8 +10,7 @@ const Template = (args) => <Card {...args} />
 
 export const Basic = Template.bind({})
 Basic.args = {
-  border: true,
-  shadow: false,
-  background: 'red',
-  color: 'white'
+  title: 'This is card',
+  size: 'default',
+  content: 'This is card content',
 }

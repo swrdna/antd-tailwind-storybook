@@ -1,5 +1,5 @@
 import React from 'react'
-import Alert from './components/Alert'
+import Alert from './Alert'
 
 export default {
   title: 'Component/Alert',
@@ -10,6 +10,6 @@ const Template = (args) => <Alert {...args} />
 
 export const Basic = Template.bind({})
 Basic.args = {
-  type: 'primary',
-  content: 'This is alert'
+  type: 'success',
+  message: 'This is alert'
 }

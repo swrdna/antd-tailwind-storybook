@@ -1,19 +1,18 @@
-import React from 'react'
-import Button from './Button'
+import React from 'react';
+import Button from './Button';
 
 export default {
   title: 'Form/Button',
-  component: Button
-}
+  component: Button,
+};
 
-const Template = (args) => <Button {...args} />
+const Template = (args) => <Button {...args}>Button</Button>
 
-export const Basic = Template.bind({})
+export const Basic = Template.bind({});
 Basic.args = {
   type: 'primary',
   size: 'medium',
-  label: 'Button Primary',
   loading: false,
   disabled: false,
-  block: false
-}
+  block: false,
+};

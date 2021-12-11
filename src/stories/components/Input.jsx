@@ -1,21 +1,21 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Input } from 'antd'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Input as AntInput } from 'antd';
 
-const MyInput = (props) => {
+const Input = (props) => {
   return (
-    <Input {...props} />
+    <AntInput {...props} className={`rounded-lg focus:border-indigo-600 focus:shadow-none hover:border-indigo-600 ${props.className}`} />
   )
-}
+};
 
-MyInput.propTypes = {
+Input.propTypes = {
   size: PropTypes.oneOf(['large', 'middle', 'small']),
-  placeholder: PropTypes.string
-}
+  placeholder: PropTypes.string,
+};
 
-MyInput.defaultProps = {
+Input.defaultProps = {
   size: 'middle',
-  placeholder: 'This is Input'
-}
+  placeholder: 'This is Input',
+};
 
-export default MyInput
+export default Input;

@@ -1,15 +1,15 @@
-import React from 'react'
-import Input from './Input'
+import React from 'react';
+import Input from './Input';
 
 export default {
   title: 'Form/Input',
-  component: Input
-}
+  component: Input,
+};
 
 const Template = (args) => <Input {...args} />
 
-export const Basic = Template.bind({})
+export const Basic = Template.bind({});
 Basic.args = {
   size: 'middle',
   placeholder: 'This is input',
-}
+};

@@ -1,1 +1,6 @@
-module.exports = require("@nanosrlorg/codeconfig").prettier;
+module.exports = {
+  semi: true,
+  tabWidth: 2,
+  singleQuote: true,
+  trailingComma: 'all',
+};

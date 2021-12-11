@@ -1,15 +1,15 @@
-import React from 'react'
-import Checkbox from './Checkbox'
+import React from 'react';
+import Checkbox from './Checkbox';
 
 export default {
   title: 'Form/Checkbox',
-  component: Checkbox
-}
+  component: Checkbox,
+};
 
 const Template = (args) => <Checkbox {...args} />
 
-export const Basic = Template.bind({})
+export const Basic = Template.bind({});
 Basic.args = {
   label: 'This is checkbox',
-  labelPosition: 'right'
-}
+  labelPosition: 'right',
+};
